@@ -37,7 +37,7 @@ namespace NetCoreBBS
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://*:80")
+                .UseUrls("http://*:8008")
                 .ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();
